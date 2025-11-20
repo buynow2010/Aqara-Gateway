@@ -125,7 +125,7 @@ DEVICES = [{
         ['0.13.85', None, '能耗', 'sensor'],
         ['4.1.85', 'neutral_0', '开关', 'switch'],  # or channel_0?
         ['13.1.85', None, 'button', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     # dual channel on/off, power measurement
@@ -144,7 +144,7 @@ DEVICES = [{
         ['13.1.85', None, 'button_1', None],
         ['13.2.85', None, 'button_2', None],
         ['13.5.85', None, 'button_both', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     # four channel on/off, power measurement
@@ -166,14 +166,14 @@ DEVICES = [{
         ['13.1.85', None, 'button_1', None],
         ['13.2.85', None, 'button_2', None],
         ['13.5.85', None, 'button_both', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     'lumi.ctrl_neutral1': ["Aqara", "Single Wall Switch", "QBKG04LM"],
     'params': [
         ['4.1.85', 'neutral_0', '开关', 'switch'],  # @vturekhanov
         ['13.1.85', None, 'button', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     # on/off
@@ -183,7 +183,7 @@ DEVICES = [{
     'params': [
         ['4.1.85', 'channel_0', '开关', 'switch'],  # or neutral_0?
         ['13.1.85', None, 'button', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     # dual channel on/off
@@ -194,7 +194,7 @@ DEVICES = [{
         ['13.1.85', None, 'button_1', None],
         ['13.2.85', None, 'button_2', None],
         ['13.5.85', None, 'button_both', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     'lumi.switch.b2lacn02': ["Aqara", "Double Wall Switch D1", "QBKG22LM"],
@@ -206,7 +206,7 @@ DEVICES = [{
         ['13.1.85', None, 'button_1', None],
         ['13.2.85', None, 'button_2', None],
         ['13.5.85', None, 'button_both', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     # triple channel on/off, no neutral wire
@@ -223,7 +223,7 @@ DEVICES = [{
         ['13.5.85', None, 'button_both_12', None],
         ['13.6.85', None, 'button_both_13', None],
         ['13.7.85', None, 'button_both_23', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     # with neutral wire, thanks @Mantoui
@@ -240,7 +240,7 @@ DEVICES = [{
         ['13.5.85', None, 'button_both_12', None],
         ['13.6.85', None, 'button_both_13', None],
         ['13.7.85', None, 'button_both_23', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     # with neutral wire
@@ -251,15 +251,15 @@ DEVICES = [{
         ['4.3.85', 'channel_2', '通道3', 'switch'],
         ['4.14.85', None, '自动亮度', 'switch'],
         ['4.23.85', None, '静音', 'switch'],
-        ['4.46.85', None, 'screensaver', 'switch'],
-        ['8.0.2207', None, 'turn_off_light_as_time', 'sensor'],
+        ['4.46.85', None, '屏保', 'switch'],
+        ['8.0.2207', None, '定时关灯', 'sensor'],
         ['13.1.85', None, 'button_1', None],
         ['13.2.85', None, 'button_2', None],
         ['13.3.85', None, 'button_3', None],
         ['13.5.85', None, 'button_both_12', None],
         ['13.6.85', None, 'button_both_13', None],
         ['13.7.85', None, 'button_both_23', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
         ['14.1.111', None, '警报状态', 'sensor']
     ]
 }, {
@@ -421,7 +421,7 @@ DEVICES = [{
     'lumi.remote.b186acn03': ["Aqara", "Single Wall Button T1", "WXKG05LM"],
     'params': [
         ['13.1.85', None, 'button', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
         ['8.0.2001', '电量', '电量', 'sensor'],
     ]
 }, {
@@ -441,7 +441,7 @@ DEVICES = [{
         ['13.6.85', None, 'button_5', None],
         ['13.7.85', None, 'button_6', None],
         ['13.5.85', None, 'button_both', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
         ['8.0.2001', 'battery', '电量', 'sensor'],
     ]
 }, {
@@ -471,7 +471,7 @@ DEVICES = [{
         ['0.6.85', None, '二氧化碳', 'sensor'],
         ['0.19.85', None, 'PM2.5', 'sensor'],
         ['0.41.85', None, 'PM1.0', 'sensor'],
-        ['0.42.85', None, 'pm10', 'sensor'],
+        ['0.42.85', None, 'PM10', 'sensor'],
     ]
 }, {
     # door window sensor
@@ -488,7 +488,7 @@ DEVICES = [{
     # motion sensor
     'lumi.sensor_motion': ["Xiaomi", "Motion Sensor", "RTCGQ01LM"],
     'params': [
-        ['3.1.85', None, 'motion', 'binary_sensor'],
+        ['3.1.85', None, '移动', 'binary_sensor'],
         ['8.0.2001', '电量', '电量', 'sensor'],
     ]
 }, {
@@ -505,7 +505,7 @@ DEVICES = [{
     'lumi.motion.ac01': ["Aqara", "Presence Detector FP1", "RTCGQ12LM"],
     'lumi.sensor_occupy.agl1': ["Aqara", "AI Presence Detector FP1E", "RTCZCGQ13LM"],
     'params': [
-        ['3.51.85', None, 'occupancy', 'binary_sensor'],
+        ['3.51.85', None, '占用', 'binary_sensor'],
         ['8.0.2115', None, 'detect_interval', None],
         ['4.22.85', None, '4.22.85', None],
         ['14.48.85', None, '14.48.85', None],
@@ -514,8 +514,8 @@ DEVICES = [{
         ['14.93.85', None, 'exits_entrances_region', None],
         ['14.94.85', None, 'interference_region', None],
         ['14.56.85', None, 'detecting_region', None],
-        ['13.21.85', None, 'occupancy_region', 'sensor'],
-        ['13.27.85', None, 'movements', 'sensor'],
+        ['13.21.85', None, '占用区域', 'sensor'],
+        ['13.27.85', None, '移动次数', 'sensor'],
         ['4.1.85', None, '监控模式', 'select'],
         ['4.2.85', None, '反转模式', 'select'],
         ['14.47.85', None, '接近距离', 'select'],
@@ -538,7 +538,7 @@ DEVICES = [{
         ['13.1.85', None, 'vibration', None],
         ['14.1.85', None, 'vibration_level', None],
         ['8.0.2001', 'battery', '电量', 'sensor'],
-        [None, None, 'action', 'binary_sensor']
+        [None, None, '动作', 'binary_sensor']
     ]
 }, {
     'lumi.sen_ill.mgl01': ["Xiaomi", "Light Sensor", "GZCGQ01LM"],
@@ -556,12 +556,12 @@ DEVICES = [{
 }, {
     'lumi.sensor_smoke.acn03': ["Aqara", "Smoke Sensor", "JTYJ-GD-02LM/BW"],
     'params': [
-        ['4.12.85', None, 'mute', 'binary_sensor'],
+        ['4.12.85', None, '静音', 'binary_sensor'],
         ['4.15.85', None, '自检', 'binary_sensor'],
         ['8.0.2001', '电量', '电量', 'sensor'],
         ['8.0.2232', 'alarm', '烟雾', 'binary_sensor'],
         ['8.0.2234', 'alarm', '错误', 'binary_sensor'],
-        ['13.28.85', None, 'smoke level', 'sensor'],
+        ['13.28.85', None, '烟雾等级', 'sensor'],
     ]
 }, {
     'lumi.sensor_smoke': ["Honeywell", "Smoke Sensor", "JTYJ-GD-01LM/BW"],
@@ -623,7 +623,7 @@ DEVICES = [{
         ['13.1.85', None, '按键ID', None],
         ['13.25.85', None, 'lock_control', None],
         ['13.28.85', None, 'lock_state', None],
-        [None, None, 'action', 'sensor'],
+        [None, None, '动作', 'sensor'],
     ]
 }, {
     'aqara.lock.wbzac1': ["Aqara", "Door Lock P100", "ZNMS19LM"],
@@ -925,7 +925,7 @@ DEVICES = [{
         ['0.25.85', 'action_duration', 'action_time', None],
         ['0.29.85', 'rotate_angle', 'rotate_angle', None],  # while hold
         ['0.30.85', 'action_duration', 'rotate_angle', None],  # while hold
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
         ['8.0.2001', 'battery', '电量', 'sensor']
     ]
 }, {
@@ -944,7 +944,7 @@ DEVICES = [{
         ['4.1.85', 'channel_0', '通道1', 'switch'],
         ['4.2.85', 'channel_1', '通道2', 'switch'],
         ['4.3.85', 'channel_2', '通道3', 'switch'],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
         ['13.8.85', None, 'mode', None],
         ['14.6.85', None, 'sensitivity', None],
         ['14.7.85', 'single_click_control_mode', 'mode', None],
@@ -1031,7 +1031,7 @@ DEVICES_AIOT = [{
         ['0.13.85', None, '能耗', 'sensor'],
         ['4.1.85', 'channel_0', '通道1', 'switch'],
         ['13.1.85', None, 'button_1', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     # with neutral wire
@@ -1048,7 +1048,7 @@ DEVICES_AIOT = [{
         ['13.1.85', None, 'button_1', None],
         ['13.2.85', None, 'button_2', None],
         ['13.5.85', None, 'button_both', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
         ['0.12.85', 'load_power', '电源', 'sensor'],
         ['0.13.85', None, '能耗', 'sensor'], # @darkbao
     ]
@@ -1072,7 +1072,7 @@ DEVICES_AIOT = [{
         ['13.5.85', None, 'button_both_12', None],
         ['13.6.85', None, 'button_both_13', None],
         ['13.7.85', None, 'button_both_23', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     # triple channel on/off, no neutral wire
@@ -1088,7 +1088,7 @@ DEVICES_AIOT = [{
         ['13.5.85', None, 'button_both_12', None],
         ['13.6.85', None, 'button_both_13', None],
         ['13.7.85', None, 'button_both_23', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     # with neutral wire
@@ -1099,7 +1099,7 @@ DEVICES_AIOT = [{
         ['0.13.85', None, '能耗', 'sensor'],
         ['4.1.85', 'channel_0', '通道1', 'switch'],
         ['13.21.85', None, 'button_1', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     'lumi.switch.agl004': ["Aqara", "Single Wall Switch H2 US", "WS-K02E"],
@@ -1109,7 +1109,7 @@ DEVICES_AIOT = [{
         ['4.1.85', 'channel_0', '通道1', 'switch'],
         ['4.4.85', 'channel_0_lock', '通道1锁定', 'switch'],
         ['13.21.85', None, 'button_1', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     # with neutral wire
@@ -1123,7 +1123,7 @@ DEVICES_AIOT = [{
         ['4.2.85', 'channel_1', '通道2', 'switch'],
         ['13.21.85', None, 'button_1', None],
         ['13.22.85', None, 'button_2', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     'lumi.switch.agl005': ["Aqara", "Double Wall Switch H2 US", "WS-K03E"],
@@ -1136,7 +1136,7 @@ DEVICES_AIOT = [{
         ['4.5.85', 'channel_1_lock', '通道2锁定', 'switch'],
         ['13.21.85', None, 'button_1', None],
         ['13.22.85', None, 'button_2', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     # with neutral wire
@@ -1151,7 +1151,7 @@ DEVICES_AIOT = [{
         ['13.21.85', None, 'button_1', None],
         ['13.22.85', None, 'button_2', None],
         ['13.23.85', None, 'button_3', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     # with neutral wire
@@ -1168,7 +1168,7 @@ DEVICES_AIOT = [{
         ['13.22.85', None, 'button_2', None],
         ['13.23.85', None, 'button_3', None],
         ['13.24.85', None, 'button_4', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     # with neutral wire
@@ -1183,7 +1183,7 @@ DEVICES_AIOT = [{
         ['13.22.85', None, 'button_2', None],
         ['13.23.85', None, 'button_3', None],
         ['13.24.85', None, 'button_4', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
 	# with neutral wire
@@ -1198,8 +1198,8 @@ DEVICES_AIOT = [{
         ['13.22.85', None, 'button_2', None],
         ['13.23.85', None, 'button_3', None],
         ['13.24.85', None, 'button_4', None],
-        [None, None, 'switch', 'binary_sensor'],
-        ['3.51.85', None, 'motion', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
+        ['3.51.85', None, '移动', 'binary_sensor'],
     ]
 }, {
     # with neutral wire
@@ -1230,7 +1230,7 @@ DEVICES_AIOT = [{
         ['14.13.85', None, 'screen_saver', None],
         ['14.21.85', None, 'channel_number', None],
         ['20.4.85', None, 'sync', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     'lumi.switch.b1lc04': ["Aqara", "Single Wall Switch E1", "QBKG38LM"],
@@ -1243,7 +1243,7 @@ DEVICES_AIOT = [{
     'params': [
         ['4.1.85', 'channel_0', '开关', 'switch'],  # or neutral_0?
         ['13.1.85', None, 'button', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     'lumi.switch.b2lc04': ["Aqara", "Double Wall Switch E1", "QBKG39LM"],
@@ -1258,7 +1258,7 @@ DEVICES_AIOT = [{
         ['13.1.85', None, 'button_1', None],
         ['13.2.85', None, 'button_2', None],
         ['13.5.85', None, 'button_both', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     'lumi.switch.b1naus01': ["Aqara", "Single Wall Switch US", "WS-USC03"],
@@ -1268,7 +1268,7 @@ DEVICES_AIOT = [{
         ['0.13.85', None, '能耗', 'sensor'],
         ['4.1.85', 'neutral_0', '开关', 'switch'],  # or channel_0?
         ['13.1.85', None, 'button', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     'lumi.switch.b2naus01': ["Aqara", "Double Wall Switch US", "WS-USC04"],
@@ -1282,14 +1282,14 @@ DEVICES_AIOT = [{
         ['13.1.85', None, 'button_1', None],
         ['13.2.85', None, 'button_2', None],
         ['13.5.85', None, 'button_both', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     # no N, https://www.aqara.com/en/single_switch_T1_no-neutral.html
     'lumi.switch.l0agl1': ["Aqara", "Relay T1", "SSM-U02"],
     'lumi.switch.l0acn1': ["Aqara", "Relay T1", "DLKZMK12LM"],  # @Kris
     'params': [
-        ['4.1.85', 'switch', '开关', 'switch'],
+        ['4.1.85', '开关', '开关', 'switch'],
         ['14.5.85', None, 'channel_loading_type', None]
     ]
 }, {
@@ -1330,7 +1330,7 @@ DEVICES_AIOT = [{
 }, {
     'lumi.motion.agl04': ["Aqara", "Precision Motion Sensor", "RTCGQ13LM"],
     'params': [
-        ['3.1.85', None, 'motion', None],
+        ['3.1.85', None, '移动', None],
         ['14.1.85', None, 'detect_level', None],
         ['8.0.2001', '电量', '电量', 'sensor'],
         ['8.0.2115', None, 'detect_interval', None],
@@ -1343,7 +1343,7 @@ DEVICES_AIOT = [{
     'lumi.remote.acn007': ["Aqara", "Button E1", "WXKG20LM"],
     'params': [
         ['13.1.85', None, 'button', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
         ['8.0.2001', '电量', '电量', 'sensor'],
     ]
 }, {
@@ -1358,7 +1358,7 @@ DEVICES_AIOT = [{
         ['13.2.85', None, 'button_2', None],
         ['13.5.85', None, 'button_both', None],
         ['13.7.85', None, 'button_both', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
         ['8.0.2001', 'battery', '电量', 'sensor'],
     ]
 }, {
@@ -1374,7 +1374,7 @@ DEVICES_AIOT = [{
         ['13.5.85', None, 'button_both_12', None],
         ['13.6.85', None, 'button_both_13', None],
         ['13.7.85', None, 'button_both_23', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     # door window sensor
@@ -1400,7 +1400,7 @@ DEVICES_AIOT = [{
     'lumi.remote.b1acn02': ["Aqara", "Button T1", "WXKG13LM"],  # @Kris
     'params': [
         ['13.1.85', None, 'button', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
         ['8.0.2001', '电量', '电量', 'sensor'],
     ]
 }, {
@@ -1416,7 +1416,7 @@ DEVICES_AIOT = [{
         ['14.2.85', None, 'vibrate_intensity_level', None],
         ['14.4.85', None, 'report_interval_level', None],
         ['8.0.2001', 'battery', '电量', 'sensor'],
-        [None, None, 'action', 'binary_sensor']
+        [None, None, '动作', 'binary_sensor']
     ]
 }, {
     'lumi.airmonitor.acn01': ["Aqara", "Smart TVOC Air Quality Monitor", "VOCKQJK11LM"],
@@ -1470,7 +1470,7 @@ DEVICES_AIOT = [{
         ['0.1.85', 'temperature', '温度', 'sensor'],
         ['1.8.85', None, '目标温度', None],
         ['14.51.85', None, '模式', None],
-        ['4.21.85', 'switch', '开关', 'switch'],
+        ['4.21.85', '开关', '开关', 'switch'],
         ['4.25.85', 'check_switch', '检测开关', 'switch'],
         ['4.26.85', 'child_lock_switch', '儿童锁开关', 'switch'],
         ['8.0.2001', 'battery', '电量', 'sensor']
@@ -1484,7 +1484,7 @@ DEVICES_AIOT = [{
         ['4.22.85', 'disinfect', '消毒开关', 'switch'],
         ['4.66.85', 'hot_drying', '热风烘干开关', 'switch'],
         ['4.67.85', 'drying', '烘干开关', 'switch'],
-        ['3.1.85', None, 'occupancy', 'binary_sensor'],
+        ['3.1.85', None, '占用', 'binary_sensor'],
         ['1.1.85', None, 'position', None],
         ['14.1.85', None, 'motor', 'cover'],  # 0: stop, 1: up, 2: down
     ]
@@ -1563,7 +1563,7 @@ DEVICES_MIOT = [{
         ['4.1', None, 'consumption', None],
         ['4.2', 'load_power', '电源', 'sensor'],
         ['8.1', None, 'button_1: 1', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     # with neutral wire,
@@ -1579,7 +1579,7 @@ DEVICES_MIOT = [{
         ['9.1', None, 'button_2: 1', None],
         ['9.2', None, 'button_2: 2', None],
         ['10.1', None, 'button_both: 4', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     # with neutral wire
@@ -1599,7 +1599,7 @@ DEVICES_MIOT = [{
         ['12.1', None, 'button_both_12: 4', None],
         ['13.1', None, 'button_both_13: 4', None],
         ['14.1', None, 'button_both_23: 4', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     'lumi.switch.b1lc04': ["Aqara", "Single Wall Switch E1", "QBKG38LM"],
@@ -1613,7 +1613,7 @@ DEVICES_MIOT = [{
         ['2.1', '2.1', '开关', 'switch'],
         ['6.1', None, 'button: 1', None],
         ['6.2', None, 'button: 2', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     'lumi.switch.b2lc04': ["Aqara", "Double Wall Switch E1", "QBKG39LM"],
@@ -1629,7 +1629,7 @@ DEVICES_MIOT = [{
         ['8.1', None, 'button_2: 1', None],
         ['8.2', None, 'button_2: 2', None],
         ['9.1', None, 'button_both: 4', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     'lumi.switch.b1naus01': ["Aqara", "Single Wall Switch US", "WS-USC03"],
@@ -1640,7 +1640,7 @@ DEVICES_MIOT = [{
         ['4.2', 'load_power', '电源', 'sensor'],
         ['6.1', None, 'button: 1', None],
         ['6.2', None, 'button: 2', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     'lumi.switch.b2naus01': ["Aqara", "Double Wall Switch US", "WS-USC04"],
@@ -1655,7 +1655,7 @@ DEVICES_MIOT = [{
         ['8.1', None, 'button_2: 1', None],
         ['8.2', None, 'button_2: 2', None],
         ['9.1', None, 'button_both: 4', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     # no N, https://www.aqara.com/en/single_switch_T1_no-neutral.html
@@ -1679,10 +1679,10 @@ DEVICES_MIOT = [{
 }, {
     'lumi.motion.agl04': ["Aqara", "Precision Motion Sensor", "RTCGQ13LM"],
     'mi_spec': [
-        ['2.1', None, 'motion', None],
-        ['4.1', None, 'motion', None],
+        ['2.1', None, '移动', None],
+        ['4.1', None, '移动', None],
         ['6.1', None, 'elapsed_time', None],
-        [None, None, 'motion', 'binary_sensor'],
+        [None, None, '移动', 'binary_sensor'],
         ['3.1', '3.1', '电量', 'sensor'],
     ]
 }, {
@@ -1690,7 +1690,7 @@ DEVICES_MIOT = [{
     'lumi.remote.b18ac1': ["Aqara", "Single Wall Button H1", "WXKG14LM"],
     'mi_spec': [
         ['3.1', None, 'button', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
         ['5.1', 'battery', '电量', 'sensor'],
     ]
 }, {
@@ -1700,7 +1700,7 @@ DEVICES_MIOT = [{
     'mi_spec': [
         ['3.1', None, 'button_1: 1', None],
         ['4.1', None, 'button_2: 1', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
         ['5.1', 'battery', '电量', 'sensor'],
     ]
 }, {
@@ -1709,7 +1709,7 @@ DEVICES_MIOT = [{
         ['2.1', None, 'button: 1', None],  # single
         ['2.2', None, 'button: 2', None],  # double
         ['2.3', None, 'button: 16', None],  # long
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     'lumi.remote.acn007': ["Aqara", "Button E1", "WXKG20LM"],
@@ -1718,7 +1718,7 @@ DEVICES_MIOT = [{
         ['2.2', None, 'button: 2', None],  # double
         ['2.3', None, 'button: 16', None],  # long
         ['3.2', '3.2', '电量', 'sensor'],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     'lumi.remote.acn004': ["Aqara", "Double Wall Button E1", "WXKG17LM"],
@@ -1729,7 +1729,7 @@ DEVICES_MIOT = [{
         ['7.1', None, 'button_2: 1', None],  # single
         ['7.2', None, 'button_2: 2', None],  # double
         ['7.3', None, 'button_2: 16', None],  # long
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 }, {
     # with neutral wire
@@ -1747,7 +1747,7 @@ DEVICES_MIOT = [{
         ['12.1', None, 'button_both_12: 4', None],
         ['13.1', None, 'button_both_13: 4', None],
         ['14.1', None, 'button_both_23: 4', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
     ]
 },{
     # door window sensor
@@ -1772,7 +1772,7 @@ DEVICES_MIOT = [{
         ['1.4', None, 'back_version', None],
         ['2.1', 'lux', 'illuminance_lux', None],
         ['3.1', 'illumination', '照度', 'sensor'],
-        ['4.1', None, 'motion', 'binary_sensor'],
+        ['4.1', None, '移动', 'binary_sensor'],
         ['5.1', 'battery', '电量', 'sensor'],
         ['6.1', None, 'elapsed_time', None],
     ]
@@ -1784,7 +1784,7 @@ DEVICES_MIOT = [{
         ['3.1', None, 'button: 1', None],
         ['3.2', None, 'button: 2', None],
         ['3.3', None, 'button: 16', None],
-        [None, None, 'switch', 'binary_sensor'],
+        [None, None, '开关', 'binary_sensor'],
         ['5.1', 'battery', '电量', 'sensor'],
     ]
 }, {
@@ -1794,7 +1794,7 @@ DEVICES_MIOT = [{
         ['3.2', None, 'load_voltage', None],
         ['6.2', None, 'vibration', None],
         ['5.1', 'battery', '电量', 'sensor'],
-        [None, None, 'action', 'binary_sensor']
+        [None, None, '动作', 'binary_sensor']
     ]
 # latest firmwares remove the support on TVOC Monitor
 #}, {
