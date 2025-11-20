@@ -2,7 +2,7 @@
   "title": "Aqara Gateway（中文汉化版）",
   "config":{
      "abort":{
-        "already_configured":"[%key:common::config_flow::abort::already_configured_device%]",
+        "already_configured":"[%key:common::config_flow::abort::already_configured_device%]"
      },
      "step":{
         "user":{
