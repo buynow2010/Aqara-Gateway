@@ -1527,11 +1527,11 @@ DEVICES_AIOT = [{
 }, {
     'aqara.toilet.acn002': ["Aqara", "Smart Toilet T1", "ZNTL01LM"],
     'params': [
-        ['4.1.85', 'ctrl_ch0_status', 'power', 'switch'],
-        ['4.2.85', 'ctrl_ch1_status', 'pee', 'switch'],
-        ['4.7.85', 'switch_nostatus', 'flush', 'switch'],
-        ['4.22.85', 'ctrl_ch22_status', 'automatic flip cover', 'switch'],
-        ['4.23.85', 'ctrl_ch23_status', 'automatic close cover', 'switch'],
+        ['4.1.85', 'ctrl_ch0_status', '电源', 'switch'],
+        ['4.2.85', 'ctrl_ch1_status', '小便', 'switch'],
+        ['4.7.85', 'switch_nostatus', '冲水', 'switch'],
+        ['4.22.85', 'ctrl_ch22_status', '自动翻盖', 'switch'],
+        ['4.23.85', 'ctrl_ch23_status', '自动关盖', 'switch'],
         ['4.39.85', 'set_direction', '清洁方向', 'select'],
         ['4.50.85', 'set_device_mode5', '水温', 'select'],
         ['4.51.85', 'set_device_mode6', '清洗等级', 'select'],
