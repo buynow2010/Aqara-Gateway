@@ -2053,27 +2053,27 @@ class Utils:
     @staticmethod
     def get_select_options(zigbee_model: str, attr: str) -> Optional[dict]:
         if zigbee_model in ['lumi.bhf_light.acn001']:
-            if attr == 'fan_mode':
+            if attr == 'fan_mode' or attr == '风扇模式':
                 return {"低风": 0, "中风": 1, "高风": 2}
-            if attr == 'swing_mode':
+            if attr == 'swing_mode' or attr == '摆风模式':
                 return {"启用": 0, "禁用": 1}
-            if attr == 'operating_mode':
+            if attr == 'operating_mode' or attr == '运行模式':
                 return {"制暖": 0, "干燥": 3, "风扇": 4, "排气": 5}
         if zigbee_model in ['lumi.motion.ac01']:
-            if attr == 'monitoring_mode':
+            if attr == 'monitoring_mode' or attr == '监控模式':
                 return {"无方向": 0, "左右": 1}
-            if attr == 'approaching_distance':
+            if attr == 'approaching_distance' or attr == '接近距离':
                 return {"近": 0, "中": 1, "远": 2}
-            if attr == 'reverted_mode':
+            if attr == 'reverted_mode' or attr == '反转模式':
                 return {"禁用": 0, "启用": 1}
         if zigbee_model in ['aqara.toilet.acn002']:
-            if attr == 'clean direction':
+            if attr == 'clean direction' or attr == '清洁方向':
                 return {"关闭": 0, "自动": 1, "手动": 1}
-            if attr == 'water temperature':
+            if attr == 'water temperature' or attr == '水温':
                 return {"常温": 0, "31°C": 1, "33°C": 2, "35°C": 3, "37°C": 4, "39°C": 5}
-            if attr == 'wash level':
+            if attr == 'wash level' or attr == '清洗等级':
                 return {"弱": 0, "中弱": 1, "中": 2, "中强": 3, "强": 4}
-            if attr == 'warn dry':
+            if attr == 'warn dry' or attr == '暖风干燥':
                 return {"关闭": 0, "常规": 1, "低": 2, "中低": 3, "中": 4, "中高": 5, "高": 6}
         return {"关闭": 0, "开启": 1}
 
