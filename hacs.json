@@ -1,0 +1,6 @@
+{
+  "name": "Aqara Gateway（中文汉化版）",
+  "render_readme": true,
+  "domains": ["sensor", "binary_sensor", "switch", "light", "cover", "climate", "fan", "alarm_control_panel", "remote", "select", "number", "air_quality"],
+  "homeassistant": "2023.9.0"
+}

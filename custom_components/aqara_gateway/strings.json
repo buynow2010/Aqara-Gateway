@@ -1,0 +1,21 @@
+{
+  "title": "Aqara Gateway（中文汉化版）",
+  "config":{
+     "abort":{
+        "already_configured":"[%key:common::config_flow::abort::already_configured_device%]",
+     },
+     "step":{
+        "user":{
+           "data":{
+              "host":"[%key:common::config_flow::data::host%]"
+           },
+           "description":"请输入您的 Aqara Gateway 连接设置。"
+        },
+        "discovery_confirm":{
+           "description":"是否要将 Aqara Gateway `{name}` 添加到 Home Assistant？",
+           "title":"发现 Aqara Gateway"
+        }
+     },
+     "flow_title":"Aqara Gateway: {name}"
+  }
+}
